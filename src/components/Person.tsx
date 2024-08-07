@@ -2,28 +2,29 @@ const getWeekDay = (today: Date) => {
     return new Intl.DateTimeFormat('pt-BR', {weekday: "long"}).format(today);
 }
 
-export const Person = () => {
-    const data = {
-        name: "Aristides Evandro",
-        avatar: "data:image/png;base64,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",
-        roles: ["Um cara legal", "Um cara..."]
-    }
+type Props = {
+    name: string,
+    avatar: string,
+    roles: string[]
+}
+
+export const Person = ({name,avatar,roles}: Props) => {
 
     const today: Date = new Date();
 
     return (
-        <>
-            <h1>{data.name} - {getWeekDay(today)}</h1>
+        <div className="p-3">
+            <h1>{name} - {getWeekDay(today)}</h1>
             <img 
-                src={data.avatar}
-                alt={data.name}
+                src={avatar}
+                alt={name}
                 className="w-40 h-40"
             />
             <ul>
-                <li>{data.roles[0]}</li>
-                <li>{data.roles[1]}</li>
+                <li>{roles[0]}</li>
+                <li>{roles[1]}</li>
             </ul>
-        </>
+        </div>
     );
 }
 
