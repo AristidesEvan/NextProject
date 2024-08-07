@@ -6,5 +6,3 @@ export const Circle = () => {
         </div>
     );
 }
-
-export default Circle;

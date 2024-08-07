@@ -5,5 +5,3 @@ export const Square = () => {
         </div>
     );
 }
-
-export default Square;

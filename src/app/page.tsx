@@ -1,6 +1,7 @@
-import Circle from "@/components/Circle";
+import { Circle } from "@/components/Circle";
 import { GeoForm } from "@/components/GeoForm";
-import Square from "@/components/Square";
+import { Person } from "@/components/Person";
+import { Square } from "@/components/Square";
 
 function Page() {
   return (
@@ -11,6 +12,8 @@ function Page() {
       <GeoForm/>
       <Square/>
       <Circle/>
+
+      <Person />
     </>
   )
 }
