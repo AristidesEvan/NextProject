@@ -12,8 +12,7 @@ function Page() {
       {
       /* <GeoForm/>
       <Square/>
-      <Circle/> 
-      */
+      <Circle/> */
       }
 
       <Person 
@@ -26,6 +25,10 @@ function Page() {
         name="joão 2"
         avatar="https://img.freepik.com/fotos-gratis/homem-bonito_144627-14183.jpg?t=st=1723042125~exp=1723045725~hmac=9a7c3b596f7ff4d9a803379af87f45a09e71e38cf964200e727c5077138d9b37&w=360"
         roles={["O irmão do cara legal", "Um cara tmb..."]}
+      />
+
+      <Person 
+        roles={["É um cara legal?", "Um cara???"]}
       />
 
     </>

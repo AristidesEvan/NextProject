@@ -3,12 +3,16 @@ const getWeekDay = (today: Date) => {
 }
 
 type Props = {
-    name: string,
-    avatar: string,
+    name?: string,
+    avatar?: string,
     roles: string[]
 }
 
-export const Person = ({name,avatar,roles}: Props) => {
+export const Person = ({
+    name = "Jão!",
+    avatar = "https://media.istockphoto.com/id/1337144146/pt/vetorial/default-avatar-profile-icon-vector.jpg?s=612x612&w=0&k=20&c=_XeYoSJQIN7GrE08cUQDJCo3U7yvoEp5OKpbhQzpmC0=",
+    roles
+}: Props) => {
 
     const today: Date = new Date();
 
