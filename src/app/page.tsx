@@ -2,7 +2,7 @@ import { Circle } from "@/components/Circle";
 import { GeoForm } from "@/components/GeoForm";
 import { Person } from "@/components/Person";
 import { Square } from "@/components/Square";
-import { Card } from "@/components/card";
+import { Card } from "@/components/Card";
 
 function Page() {
   return (
@@ -10,12 +10,7 @@ function Page() {
       <h1 className="font-bold text-2xl">Olá, mundo!</h1>
       <h3>Algum outro texto!</h3>
 
-        <Card>
-          <>
-            <h1 className="font-bold text-3xl italic">"Frase de muitooo efeito!"</h1>
-            <div className="text-right text-stone-400">- Autor da frase.</div>
-          </>
-        </Card>
+        <Card phrase="Alguma frase TOP!" />
 
       {
       /* <GeoForm/>
